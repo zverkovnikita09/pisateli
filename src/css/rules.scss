@@ -1,0 +1,158 @@
+@font-face {
+    font-family: Kubots;
+    src: url(../fonts/KubotsExtrablack.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Kubots;
+    src: url(../fonts/KubotsExtraLight-EaE1z.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Jura;
+    src: url(../fonts/Jura-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+    color: inherit;
+    font-weight: inherit;
+    scroll-behavior: smooth;
+    cursor: url(../images/icons/cursor.png), default;
+}
+
+a {
+    text-decoration: none;
+    cursor: url(../images/icons/cursor-hover.png), pointer;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: url(../images/icons/cursor-hover.png), pointer;
+}
+
+img {
+    pointer-events: none;
+}
+
+body {
+    font-family: Jura;
+    background-color: #101010;
+}
+
+.wrapper {
+    color: #fff;
+    position: relative;
+    padding-bottom: 200px;
+
+    @media (max-width:768px){
+        padding-bottom: 100px;         
+    }
+}
+
+
+.opacity_cross {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 1284px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+
+        @media (max-width:1290px){
+            max-width:900px;           
+        }
+        @media (max-width:950px){
+            max-width:100%;
+            padding: 0 20px;           
+        }
+        
+}
+
+.logo {
+    display: grid;
+    gap: 32px;
+    text-align: center;
+    font-size: 44px;
+    line-height: 1;
+    justify-items: center;
+    font-family: Kubots;
+}
+
+.title {
+    text-align: center;
+    font-family: Jura;
+    font-size: 44px;
+    line-height: 1;
+    margin-top: 72px;
+
+    @media (max-width:768px){
+        font-size: 32px;         
+    }
+}
+
+.content {
+    margin-top: 72px;
+    font-family: Jura;
+    font-size: 32px;
+    color: #979797;
+
+    @media (max-width:768px){
+        font-size: 23px;         
+    }
+
+    p {
+        margin-bottom: 40px;
+    }
+
+    span {
+        color: #FFF
+    }
+
+}
+
+.linkback {
+    color: #BAFD4F;
+    font-size: 32px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    line-height: 1;
+    margin-top: 129px;
+
+    img {
+        margin-top: 10px;
+    }
+}
+
+.cross {
+    position: absolute;
+    right: calc(50% - 600px);
+    bottom: 270px;
+
+        @media(max-width:1290px){
+                right: calc(50% - 450px);
+        }
+        @media (max-width:950px){
+            right: 20px;          
+        }
+        @media (max-width:768px){
+            bottom: 170px;         
+        }
+        
+}
