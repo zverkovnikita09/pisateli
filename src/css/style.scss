@@ -225,6 +225,7 @@ body {
     opacity: 0;
     scale: 0.7;
   }
+
   to {
     opacity: 1;
     scale: 1;
@@ -355,7 +356,7 @@ body {
   @media (max-width: 1024px) {
     margin-top: 83px;
     overflow-x: hidden;
-    height: 400px;
+    height: 450px;
     padding: 0;
   }
 
@@ -368,27 +369,28 @@ body {
 
     @media (max-width: 1024px) {
       width: 100%;
+      transform: translateY(-25px);
     }
 
     &.in_view {
       .card.is--1 {
-        transform: translateX(36.5%);
+        transform: translateX(43.5%) rotate(10deg);
       }
 
       .card.is--2 {
-        transform: translateX(17%);
+        transform: translateX(22%) rotate(0);
       }
 
       .card.is--3 {
-        transform: translateX(-14%);
+        transform: translateX(-7%) rotate(-9deg);
       }
 
       .card.is--4 {
-        transform: translateX(-31.5%);
+        transform: translateX(-7.5%) rotate(-16deg);
       }
 
       .card.is--5 {
-        transform: translateX(-43%);
+        transform: translateX(-45%) rotate(-23deg);
       }
     }
   }
@@ -399,7 +401,7 @@ body {
   position: absolute;
 
   @media (max-width: 1024px) {
-    transition: 0.5s;
+    transition: 0.7s;
   }
 
   &.is--1 {
@@ -413,37 +415,37 @@ body {
 
   &.is--2 {
     z-index: 4;
-    height: 550px;
+    height: 585px;
 
     @media (max-width: 1024px) {
-      height: 370px;
+      height: 380px;
     }
   }
 
   &.is--3 {
     z-index: 3;
-    height: 500px;
+    height: 560px;
+
+    @media (max-width: 1024px) {
+      height: 360px;
+    }
+  }
+
+  &.is--4 {
+    z-index: 2;
+    height: 545px;
 
     @media (max-width: 1024px) {
       height: 340px;
     }
   }
 
-  &.is--4 {
-    z-index: 2;
-    height: 450px;
-
-    @media (max-width: 1024px) {
-      height: 310px;
-    }
-  }
-
   &.is--5 {
     z-index: 1;
-    height: 400px;
+    height: 530px;
 
     @media (max-width: 1024px) {
-      height: 280px;
+      height: 320px;
     }
   }
 }

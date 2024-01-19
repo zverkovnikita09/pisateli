@@ -95,12 +95,13 @@ if (window.matchMedia("(min-width: 1025px").matches) {
 
   gsap.fromTo(
     ".card.is--1",
-    { x: 0 },
+    { x: 0, rotate: 11 },
     {
-      x: "42.5%",
+      x: "47.5%",
+      rotate: 11,
       scrollTrigger: {
         trigger: ".cards",
-        start: "-110%",
+        start: "-130%",
         end: "bottom",
         scrub: true,
       },
@@ -114,7 +115,7 @@ if (window.matchMedia("(min-width: 1025px").matches) {
       x: "10%",
       scrollTrigger: {
         trigger: ".cards",
-        start: "-110%",
+        start: "-130%",
         end: "bottom",
         scrub: true,
       },
@@ -123,12 +124,13 @@ if (window.matchMedia("(min-width: 1025px").matches) {
 
   gsap.fromTo(
     ".card.is--3",
-    { x: 0 },
+    { x: 0, rotate: -10 },
     {
       x: "-25%",
+      rotate: -10,
       scrollTrigger: {
         trigger: ".cards",
-        start: "-110%",
+        start: "-130%",
         end: "bottom",
         scrub: true,
       },
@@ -137,12 +139,13 @@ if (window.matchMedia("(min-width: 1025px").matches) {
 
   gsap.fromTo(
     ".card.is--4",
-    { x: 0 },
+    { x: 0, rotate: -22 },
     {
-      x: "-47.5%",
+      x: "-28.5%",
+      rotate: -22,
       scrollTrigger: {
         trigger: ".cards",
-        start: "-110%",
+        start: "-130%",
         end: "bottom",
         scrub: true,
       },
@@ -151,12 +154,14 @@ if (window.matchMedia("(min-width: 1025px").matches) {
 
   gsap.fromTo(
     ".card.is--5",
-    { x: 0 },
+    { x: 0, rotate: -30, y: 40 },
     {
-      x: "-60%",
+      x: "-75%",
+      rotate: -30,
+      y: 40,
       scrollTrigger: {
         trigger: ".cards",
-        start: "-110%",
+        start: "-130%",
         end: "bottom",
         scrub: true,
       },
@@ -413,7 +418,7 @@ if (window.matchMedia("(min-width: 1025px").matches) {
       });
     },
     {
-      threshold: 0.3,
+      threshold: 0.2,
     }
   );
 
